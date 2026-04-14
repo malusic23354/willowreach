@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Monocraft';
+            src: url('fonts/Monocraft.woff2') format('woff2'),
+                 url('fonts/Monocraft.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Monocraft';
+            font-size: small;
+        }
+
+        body, html {
+            width: 100vw;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: rgba(105, 0, 180, 0.068);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 30%;
+            height: auto;
+            margin: 2% 0 3% 0;
+        }
+
+        .txts {
+            width: 90vw;
+            max-width: 900px;
+            text-align: center;
+            margin-bottom: 4%;
+        }
+
+        .txts p {
+            color: #f5d1ff;
+            background-color: rgb(44, 0, 60);
+            width: fit-content;
+            margin: 0 auto 8px auto;
+            border-radius: 10px;
+            padding: 0.5% 1%;
+        }
+
+        .container {
+            width: 90vw;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .content {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid rgb(44, 0, 60);
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.05);
+        }
+
+        .content#one {
+            align-self: flex-start;
+        }
+
+        .content#two {
+            align-self: flex-end;
+        }
+
+        .content img {
+            width: 20vw;
+            max-width: 260px;
+            height: auto;
+            border: 1px solid rgb(44, 0, 60);
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .txtcont {
+            color: rgb(44, 0, 60);
+            background-color: #f5d1ff;
+            border-radius: 10px;
+            padding: 0.5% 1%;
+            flex: 1;
+        }
+
+        .txtcont p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/willowreach_logo_main.png" class="logo" alt="Willowreach Logo">
+
+    <div class="txts">
+        <p>Welcome to Willowreach Website!</p>
+        <p>We are a public community starting out with a Minecraft SMP Server</p>
+        <p>that offers the best gameplay you can have with custom Crops, Food, Furniture,</p>
+        <p>Mobs, etc... so Join us today! meanwhile have fun looking around our website too!</p>
+    </div>
+
+    <div class="container">
+        <div class="content" id="one">
+            <img src="images/img_main_txts_1.png" alt="Minecraft Content">
+            <div class="txtcont">
+                <p>We at Willowreach are dedicated to providing the best Minecraft SMP</p>
+                <p>experience with our custom content and active community.</p>
+            </div>
+        </div>
+
+        <div class="content" id="two">
+            <img src="images/img_main_txts_1.png" alt="Minecraft Content">
+            <div class="txtcont">
+                <p>We at Willowreach are dedicated to providing the best Minecraft SMP</p>
+                <p>experience with our custom content and active community.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
